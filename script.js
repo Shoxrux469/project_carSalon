@@ -59,7 +59,7 @@ let optResult = []
 optResult = cars.find((car) => car.name == options)
 console.log(optResult)
 if(optResult) {
-    let ask = prompt('Please, enter your credit card number to pay for the car')
+    let ask = +prompt('Please, enter your credit card number to pay for the car')
 } else {
     alert('Error!')
 }
