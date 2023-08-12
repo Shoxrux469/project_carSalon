@@ -1,5 +1,4 @@
 
-
 let cars = [
     {
         name: "malibu",
@@ -54,7 +53,7 @@ if (from <= to && from > 0 && to > 0) {
 }
 // 2
 // какую вы из этих машин купите?
-let options = prompt('Which car would you like to purchase?')
+let options = prompt('Which car would you like to purchase?' + result.map(item => item.name))
 let optResult = []
 optResult = cars.find((car) => car.name == options)
 console.log(optResult)
